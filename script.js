@@ -6,6 +6,7 @@ const next = document.getElementById("next");
 const title = document.getElementById("title");
 const theme = document.getElementById("theme-toggle");
 
+//theme
 theme.addEventListener("click", () => {
   const body = document.body;
 
@@ -18,4 +19,20 @@ theme.addEventListener("click", () => {
     body.classList.add("light");
     theme.textContent = "Switch to Dark Mode";
   }
+});
+
+//font
+
+plus.addEventListener("click", () => {
+  let fontsize = window
+    .getComputedStyle(title, null)
+    .getPropertyValue("font-size");
+  title.style.fontSize = parseInt(fontsize) + 1 + "px";
+});
+
+minu.addEventListener("click", () => {
+  let fontsize = window
+    .getComputedStyle(title, null)
+    .getPropertyValue("font-size");
+  title.style.fontSize = parseInt(fontsize) - 1 + "px";
 });
