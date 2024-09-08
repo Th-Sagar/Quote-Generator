@@ -65,3 +65,11 @@ button:hover {
 #title {
   margin: 1rem 0;
 }
+
+img {
+  width: 2rem;
+}
+
+.dark img {
+  background-color: white;
+}
